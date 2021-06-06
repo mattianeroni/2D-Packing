@@ -7,14 +7,7 @@ OrderLine = collections.namedtuple("OrderLine", "code cases")
 
 def rotate (case):
     case.sizex, case.sizey = case.sizey, case.sizex
-
-
-
-def froze (case):
-    case.frozen_x, case.frozen_y = case.x, case.y
-    case.frozen_sizex, case.frozen_sizey = case.sizex, case.sizey
-
-
+    
 
 class Case (object):
 
@@ -55,7 +48,3 @@ class Case (object):
 
     def rotate (self):
         self.sizex, self.sizey = self.sizey, self.sizex
-
-    def froze (self):
-        self.frozen_x, self.frozen_y = self.x, self.y
-        self.frozen_sizex, self.frozen_sizey = self.sizex, self.sizey
