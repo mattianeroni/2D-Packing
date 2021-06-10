@@ -682,7 +682,7 @@ def MRBAF (cases, layersize):
                       |####|               |       |####|               |
                       |####|_______________|       |####|_______________|
 
-    In this case (i.e., "bottom left") priority is given to smaller spaces.
+    In this case (i.e., "best area fit") priority is given to smaller spaces.
 
     """
     X, Y = layersize
